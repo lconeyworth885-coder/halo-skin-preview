@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halo Skin | Bespoke Skin &amp; Facial Clinic in Southwell</title>
+  <meta name="description" content="Halo Skin at 54a King Street, Southwell (NG25 0EN). 5.0-star rated bespoke facials, SkinPen microneedling, dermaplaning, and sculptural skin rituals." />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          colors: {
+            halo: {
+              alabaster: '#FAF6F1',
+              cream: '#F3ECE2',
+              sand: '#E8DDD0',
+              terracotta: '#D96B52',
+              terracottaDark: '#BE553D',
+              amber: '#E5A93C',
+              espresso: '#1F1A18',
+              cocoa: '#5A4E49',
+              sage: '#6E7F6B',
+            }
+          },
+          boxShadow: {
+            'soft': '0 20px 50px -15px rgba(31, 26, 24, 0.08)',
+            'glow': '0 16px 40px -10px rgba(217, 107, 82, 0.32)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF6F1;
+      color: #1F1A18;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Page View Transitions */
+    .page-view {
+      display: none;
+      animation: fadeSlideIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .page-view.active {
+      display: block;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Vibrant ambient gradient mesh */
+    .vibrant-orb-1 {
+      background: radial-gradient(circle, rgba(217, 107, 82, 0.18) 0%, rgba(229, 169, 60, 0.08) 45%, rgba(250, 246, 241, 0) 75%);
+    }
+
+    .vibrant-orb-2 {
+      background: radial-gradient(circle, rgba(229, 169, 60, 0.2) 0%, rgba(217, 107, 82, 0.07) 50%, rgba(250, 246, 241, 0) 75%);
+    }
+
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF6F1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D8CBB8;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D96B52;
+    }
+
+    /* Accordion smooth height */
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+    }
+    .faq-item.open .faq-content {
+      max-height: 300px;
+      opacity: 1;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-halo-terracotta selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-halo-espresso text-halo-alabaster text-xs sm:text-sm py-2.5 px-4 text-center relative z-40">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+      <span class="inline-flex items-center gap-1.5 font-medium">
+        <span class="w-2 h-2 rounded-full bg-halo-amber inline-block"></span>
+        5.0-Star Rated Clinic &bull; 320+ Verified Client Reviews
+      </span>
+      <span class="hidden sm:inline text-halo-cocoa">|</span>
+      <span class="text-halo-sand">54a King Street, Southwell, NG25 0EN</span>
+      <span class="hidden md:inline text-halo-cocoa">|</span>
+      <a href="tel:07704330156" class="hidden md:inline-flex items-center gap-1 text-halo-amber hover:text-white transition font-semibold">
+        Call 07704 330156
+      </a>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-halo-alabaster/90 backdrop-blur-md border-b border-halo-sand/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <button type="button" onclick="navigateTo('home')" class="flex items-center gap-3 text-left group focus:outline-none">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-halo-terracotta to-halo-amber flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+            <!-- Sunburst / Halo SVG Icon -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="font-editorial text-2xl sm:text-3xl font-semibold tracking-tight text-halo-espresso block leading-none">
+              Halo Skin
+            </span>
+            <span class="text-[10px] uppercase tracking-[0.22em] text-halo-cocoa font-semibold block mt-1">
+              Southwell Clinic
+            </span>
+          </div>
+        </button>
+
+        <!-- Desktop Page Navigation Links -->
+        <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-2 bg-halo-cream/80 p-1.5 rounded-full border border-halo-sand">
+          <button type="button" data-nav="home" onclick="navigateTo('home')" class="nav-pill px-5 py-2 rounded-full text-sm font-semibold transition-all bg-halo-espresso text-white shadow-sm">
+            Home
+          </button>
+          <button type="button" data-nav="treatments" onclick="navigateTo('treatments')" class="nav-pill px-5 py-2 rounded-full text-sm font-semibold transition-all text-halo-espresso hover:bg-white/70">
+            Treatments &amp; Pricing
+          </button>
+          <button type="button" data-nav="about" onclick="navigateTo('about')" class="nav-pill px-5 py-2 rounded-full text-sm font-semibold transition-all text-halo-espresso hover:bg-white/70">
+            About &amp; Clinic
+          </button>
+          <button type="button" data-nav="contact" onclick="navigateTo('contact')" class="nav-pill px-5 py-2 rounded-full text-sm font-semibold transition-all text-halo-espresso hover:bg-white/70">
+            Book &amp; Contact
+          </button>
+        </nav>
+
+        <!-- Desktop Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:07704330156" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold text-halo-espresso border border-halo-sand bg-white hover:border-halo-terracotta hover:text-halo-terracotta transition">
+            <svg class="w-4 h-4 text-halo-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>07704 330156</span>
+          </a>
+          <button type="button" onclick="openBookingModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-halo-terracotta to-halo-terracottaDark hover:brightness-110 shadow-glow transition cursor-pointer">
+            <span>Book Now</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button type="button" onclick="openBookingModal()" class="sm:hidden px-3.5 py-2 rounded-full text-xs font-semibold text-white bg-halo-terracotta shadow-sm">
+            Book Now
+          </button>
+          <button type="button" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Toggle Menu" class="p-2.5 rounded-xl bg-white border border-halo-sand text-halo-espresso hover:border-halo-terracotta transition">
+            <svg id="menuIconOpen" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="menuIconClose" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation Drawer -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden bg-white border-b border-halo-sand px-4 pt-3 pb-6 shadow-xl">
+      <div class="flex flex-col space-y-2">
+        <button type="button" data-nav-mobile="home" onclick="navigateTo('home'); toggleMobileMenu(false);" class="mobile-nav-item w-full text-left px-4 py-3 rounded-2xl text-base font-semibold bg-halo-cream text-halo-espresso">
+          Home
+        </button>
+        <button type="button" data-nav-mobile="treatments" onclick="navigateTo('treatments'); toggleMobileMenu(false);" class="mobile-nav-item w-full text-left px-4 py-3 rounded-2xl text-base font-semibold text-halo-espresso hover:bg-halo-alabaster">
+          Treatments &amp; Pricing
+        </button>
+        <button type="button" data-nav-mobile="about" onclick="navigateTo('about'); toggleMobileMenu(false);" class="mobile-nav-item w-full text-left px-4 py-3 rounded-2xl text-base font-semibold text-halo-espresso hover:bg-halo-alabaster">
+          About &amp; Clinic
+        </button>
+        <button type="button" data-nav-mobile="contact" onclick="navigateTo('contact'); toggleMobileMenu(false);" class="mobile-nav-item w-full text-left px-4 py-3 rounded-2xl text-base font-semibold text-halo-espresso hover:bg-halo-alabaster">
+          Book &amp; Contact
+        </button>
+      </div>
+      <div class="mt-4 pt-4 border-t border-halo-sand grid grid-cols-2 gap-3">
+        <a href="tel:07704330156" class="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl border border-halo-sand text-sm font-semibold text-halo-espresso bg-halo-alabaster">
+          <svg class="w-4 h-4 text-halo-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Call Clinic
+        </a>
+        <button type="button" onclick="toggleMobileMenu(false); openBookingModal();" class="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-halo-terracotta text-white text-sm font-semibold shadow-sm">
+          Reserve Slot
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 1: HOME                                                          -->
+  <!-- ===================================================================== -->
+  <main id="page-home" class="page-view active">
+    
+    <!-- Vibrant Editorial Hero Section -->
+    <section class="relative overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-24">
+      <!-- Warm Ambient Orbs -->
+      <div class="vibrant-orb-1 w-[520px] h-[520px] rounded-full absolute -top-24 -left-24 pointer-events-none"></div>
+      <div class="vibrant-orb-2 w-[600px] h-[600px] rounded-full absolute top-10 -right-32 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left Editorial Copy -->
+          <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-halo-sand shadow-sm">
+              <div class="flex items-center text-halo-amber">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <span class="text-xs font-bold tracking-wide text-halo-espresso">5.0 Rating &bull; Over 320 Glowing Reviews</span>
+            </div>
+
+            <h1 class="font-editorial text-5xl sm:text-6xl lg:text-7xl font-semibold text-halo-espresso leading-[1.06] tracking-tight">
+              Radiant, sculpted skin tailored <span class="italic font-normal text-halo-terracotta">exclusively</span> to you.
+            </h1>
+
+            <p class="text-base sm:text-lg text-halo-cocoa max-w-2xl leading-relaxed">
+              Tucked on King Street in the heart of Southwell, <strong class="text-halo-espresso font-semibold">Halo Skin</strong> pairs clinical-grade skin science with restorative sculptural massage—helping you achieve luminous, healthy skin in a calm, sun-drenched sanctuary.
+            </p>
+
+            <!-- Primary CTA Group -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <button type="button" onclick="openBookingModal()" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-halo-terracotta to-halo-terracottaDark hover:brightness-110 shadow-glow transition cursor-pointer">
+                <span>Reserve Your Appointment</span>
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+
+              <button type="button" onclick="navigateTo('treatments')" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base font-semibold text-halo-espresso bg-white border border-halo-sand hover:border-halo-terracotta hover:text-halo-terracotta shadow-sm transition cursor-pointer">
+                <span>Explore Full Menu</span>
+              </button>
+            </div>
+
+            <!-- Quick Trust Pillars -->
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-halo-sand max-w-xl">
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-halo-espresso">54a</p>
+                <p class="text-xs text-halo-cocoa font-medium mt-0.5">King St, Southwell</p>
+              </div>
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-halo-terracotta">5.0 / 5</p>
+                <p class="text-xs text-halo-cocoa font-medium mt-0.5">320+ Verified Clients</p>
+              </div>
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-halo-espresso">1-to-1</p>
+                <p class="text-xs text-halo-cocoa font-medium mt-0.5">Private Clinic Suite</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual Composition -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-[2.25rem] overflow-hidden shadow-soft border-4 border-white aspect-[4/5] bg-halo-cream">
+              <img 
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" 
+                onerror="this.src='https://placehold.co/800x1000/E8DDD0/1F1A18?text=Halo+Skin+Southwell'"
+                alt="Serene luxury facial treatment at Halo Skin Southwell" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-halo-espresso/55 via-transparent to-transparent"></div>
+              
+              <!-- Floating Bottom Card -->
+              <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-3xl shadow-lg border border-halo-sand/60">
+                <div class="flex items-center justify-between gap-3">
+                  <div>
+                    <span class="text-[11px] uppercase tracking-widest font-bold text-halo-terracotta block">Most Requested</span>
+                    <p class="font-editorial text-xl font-bold text-halo-espresso">The Halo Customised Facial</p>
+                    <p class="text-xs text-halo-cocoa mt-0.5">60 Mins &bull; Bespoke Skin Analysis &amp; Sculpt</p>
+                  </div>
+                  <button type="button" onclick="openBookingModal('The Halo Customised Facial — £75')" class="shrink-0 px-4 py-2.5 rounded-full bg-halo-espresso text-white text-xs font-semibold hover:bg-halo-terracotta transition">
+                    £75 &bull; Book
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Treatments Preview Strip -->
+    <section class="py-16 sm:py-24 bg-white border-y border-halo-sand/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Curated Skin Menu</span>
+            <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-halo-espresso">
+              Signature Treatments &amp; Rituals
+            </h2>
+          </div>
+          <button type="button" onclick="navigateTo('treatments')" class="inline-flex items-center gap-2 text-sm font-bold text-halo-terracotta hover:text-halo-espresso transition self-start md:self-auto">
+            <span>View All 9 Treatments &amp; Pricing</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <!-- Featured Card 1 -->
+          <div class="group rounded-3xl bg-halo-alabaster border border-halo-sand p-7 flex flex-col justify-between hover:shadow-soft hover:border-halo-terracotta/50 transition-all">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-halo-terracotta/12 text-halo-terracotta">Signature Facial</span>
+                <span class="font-editorial text-2xl font-bold text-halo-espresso">£75</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mb-2">The Halo Customised Facial</h3>
+              <p class="text-xs font-semibold text-halo-cocoa mb-3">Duration: 60 Minutes</p>
+              <p class="text-sm text-halo-cocoa leading-relaxed">
+                Every complexion is unique. Following an in-depth skin assessment, we combine deep enzymatic cleansing, targeted serums, and sculptural lymphatic massage for an immediate healthy glow.
+              </p>
+            </div>
+            <div class="mt-6 pt-5 border-t border-halo-sand flex items-center justify-between">
+              <button type="button" onclick="openBookingModal('The Halo Customised Facial — £75')" class="w-full py-3 px-5 rounded-full bg-halo-espresso text-white text-sm font-semibold hover:bg-halo-terracotta transition">
+                Book This Treatment
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Card 2 -->
+          <div class="group rounded-3xl bg-gradient-to-b from-halo-cream to-halo-alabaster border-2 border-halo-amber/50 p-7 flex flex-col justify-between shadow-soft relative">
+            <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full bg-gradient-to-r from-halo-terracotta to-halo-amber text-white text-[11px] font-bold uppercase tracking-wider shadow-sm">
+              Client Favourite
+            </div>
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-halo-amber/20 text-halo-espresso">Holistic Sculpt</span>
+                <span class="font-editorial text-2xl font-bold text-halo-espresso">£100</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mb-2">The Sculpt &amp; Glow Ritual</h3>
+              <p class="text-xs font-semibold text-halo-cocoa mb-3">Duration: 90 Minutes</p>
+              <p class="text-sm text-halo-cocoa leading-relaxed">
+                Our deeply restorative 90-minute signature ritual combining lifting facial sculpting, buccal &amp; lymphatic drainage techniques, and nutrient-rich botanical masks to visibly contour and de-puff.
+              </p>
+            </div>
+            <div class="mt-6 pt-5 border-t border-halo-sand">
+              <button type="button" onclick="openBookingModal('The Sculpt & Glow Ritual — £100')" class="w-full py-3 px-5 rounded-full bg-gradient-to-r from-halo-terracotta to-halo-terracottaDark text-white text-sm font-semibold hover:brightness-110 shadow-glow transition">
+                Book This Ritual
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Card 3 -->
+          <div class="group rounded-3xl bg-halo-alabaster border border-halo-sand p-7 flex flex-col justify-between hover:shadow-soft hover:border-halo-terracotta/50 transition-all">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-halo-sage/15 text-halo-sage">Advanced Clinical</span>
+                <span class="font-editorial text-2xl font-bold text-halo-espresso">£180</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mb-2">SkinPen Precision Microneedling</h3>
+              <p class="text-xs font-semibold text-halo-cocoa mb-3">Duration: 90 Minutes</p>
+              <p class="text-sm text-halo-cocoa leading-relaxed">
+                Gold-standard collagen induction therapy engineered to remodel fine lines, acne scarring, and enlarged pores. Includes topical numbing, cooling biocellulose mask, and post-care essentials.
+              </p>
+            </div>
+            <div class="mt-6 pt-5 border-t border-halo-sand">
+              <button type="button" onclick="openBookingModal('SkinPen Precision Microneedling — £180')" class="w-full py-3 px-5 rounded-full bg-halo-espresso text-white text-sm font-semibold hover:bg-halo-terracotta transition">
+                Book This Treatment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Client Reviews Section -->
+    <section class="py-16 sm:py-24 bg-halo-alabaster">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">5.0-Star Reputation</span>
+          <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-halo-espresso">
+            Loved by Clients Across Southwell
+          </h2>
+          <p class="text-sm sm:text-base text-halo-cocoa mt-3">
+            With over 320 five-star reviews, our private King Street clinic is trusted for visible skin results and unhurried personal care.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-7 rounded-3xl border border-halo-sand shadow-sm">
+            <div class="flex items-center gap-1 text-halo-amber mb-4">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-halo-espresso leading-relaxed italic mb-5">
+              "The best facial I have ever had. The clinic on King Street feels so calm and welcoming, and my skin genuinely glowed for weeks after the Sculpt &amp; Glow Ritual."
+            </p>
+            <p class="text-xs font-bold text-halo-espresso uppercase tracking-wider">Hannah M. &bull; Southwell</p>
+          </div>
+
+          <div class="bg-white p-7 rounded-3xl border border-halo-sand shadow-sm">
+            <div class="flex items-center gap-1 text-halo-amber mb-4">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-halo-espresso leading-relaxed italic mb-5">
+              "Incredible knowledge and zero pressure. My acne scarring and texture have transformed since starting SkinPen sessions at Halo Skin. Worth every single penny."
+            </p>
+            <p class="text-xs font-bold text-halo-espresso uppercase tracking-wider">Claire W. &bull; Newark-on-Trent</p>
+          </div>
+
+          <div class="bg-white p-7 rounded-3xl border border-halo-sand shadow-sm">
+            <div class="flex items-center gap-1 text-halo-amber mb-4">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-halo-espresso leading-relaxed italic mb-5">
+              "Booked the Face &amp; Back Ritual before my holiday and felt completely renewed. Such a hidden gem right on King Street in Southwell."
+            </p>
+            <p class="text-xs font-bold text-halo-espresso uppercase tracking-wider">Sophie R. &bull; Nottingham</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vibrant Bottom Banner -->
+    <section class="py-14 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-r from-halo-espresso via-[#2D2320] to-halo-espresso p-8 sm:p-14 text-white relative overflow-hidden shadow-soft">
+        <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-halo-terracotta/25 blur-2xl pointer-events-none"></div>
+        <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div class="max-w-2xl">
+            <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-amber block mb-2">New to Halo Skin?</span>
+            <h2 class="font-editorial text-3xl sm:text-5xl font-semibold leading-tight">
+              Unsure which facial is best for your skin goals?
+            </h2>
+            <p class="text-sm sm:text-base text-halo-sand mt-3">
+              Book <strong class="text-white">The Halo Customised Facial (£75)</strong> or call the clinic directly on <a href="tel:07704330156" class="underline text-halo-amber font-semibold">07704 330156</a> for tailored advice before your visit.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <button type="button" onclick="openBookingModal('The Halo Customised Facial — £75')" class="px-7 py-4 rounded-full bg-halo-terracotta hover:bg-halo-terracottaDark text-white font-semibold text-sm text-center shadow-glow transition">
+              Book Customised Facial
+            </button>
+            <button type="button" onclick="navigateTo('contact')" class="px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm text-center transition">
+              Hours &amp; Directions
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 2: TREATMENTS & PRICING                                          -->
+  <!-- ===================================================================== -->
+  <main id="page-treatments" class="page-view">
+    <section class="pt-12 pb-20 sm:pt-16 sm:pb-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="max-w-3xl mb-10">
+          <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Treatment Menu &amp; Tariff</span>
+          <h1 class="font-editorial text-4xl sm:text-6xl font-semibold text-halo-espresso leading-tight">
+            Bespoke Facials &amp; Clinical Skin Therapy
+          </h1>
+          <p class="text-base text-halo-cocoa mt-4 leading-relaxed">
+            Every appointment begins with a thorough skin consultation at our private suite on 54a King Street. Select any treatment below to reserve your preferred slot.
+          </p>
+        </div>
+
+        <!-- Interactive Filter & Search Controls -->
+        <div class="bg-white p-4 sm:p-5 rounded-3xl border border-halo-sand shadow-sm mb-10 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          <!-- Category Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-2" id="treatmentFilterButtons">
+            <button type="button" data-filter="all" onclick="filterTreatments('all')" class="filter-btn active px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-halo-espresso text-white transition">
+              All Treatments (9)
+            </button>
+            <button type="button" data-filter="signature" onclick="filterTreatments('signature')" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-halo-alabaster text-halo-espresso hover:bg-halo-cream transition">
+              Signature Facials
+            </button>
+            <button type="button" data-filter="clinical" onclick="filterTreatments('clinical')" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-halo-alabaster text-halo-espresso hover:bg-halo-cream transition">
+              Advanced Clinical
+            </button>
+            <button type="button" data-filter="rituals" onclick="filterTreatments('rituals')" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-halo-alabaster text-halo-espresso hover:bg-halo-cream transition">
+              Rituals &amp; Body
+            </button>
+          </div>
+
+          <!-- Search Input -->
+          <div class="relative w-full lg:w-72">
+            <input 
+              type="text" 
+              id="treatmentSearchInput" 
+              oninput="searchTreatments(this.value)"
+              placeholder="Search facials, SkinPen, peel..." 
+              class="w-full pl-10 pr-4 py-2.5 rounded-full bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso placeholder-halo-cocoa/70 focus:outline-none focus:border-halo-terracotta"
+            />
+            <svg class="w-4 h-4 text-halo-cocoa absolute left-3.5 top-1/2 -translate-y-1/2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Treatments Grid (Rendered dynamically + clean fallback) -->
+        <div id="treatmentsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <!-- Populated cleanly via JS on load -->
+        </div>
+
+        <!-- Empty Search State -->
+        <div id="noTreatmentsFound" class="hidden text-center py-16 bg-white rounded-3xl border border-halo-sand">
+          <p class="font-editorial text-2xl font-semibold text-halo-espresso">No matching treatments found</p>
+          <p class="text-sm text-halo-cocoa mt-1 mb-4">Try clearing your search or viewing all categories.</p>
+          <button type="button" onclick="resetTreatmentFilters()" class="px-6 py-2.5 rounded-full bg-halo-terracotta text-white text-sm font-semibold">
+            Show All Treatments
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 3: ABOUT & CLINIC                                                -->
+  <!-- ===================================================================== -->
+  <main id="page-about" class="page-view">
+    <section class="pt-12 pb-20 sm:pt-16 sm:pb-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Two-Column Clinic Story -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+          <div class="lg:col-span-6">
+            <div class="rounded-[2.25rem] overflow-hidden border-4 border-white shadow-soft aspect-[4/3] bg-halo-cream">
+              <img 
+                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1000&q=85" 
+                onerror="this.src='https://placehold.co/900x700/E8DDD0/1F1A18?text=Halo+Skin+Clinic+Suite'"
+                alt="Warm sunlit treatment suite interior" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block">The Halo Philosophy</span>
+            <h1 class="font-editorial text-4xl sm:text-5xl font-semibold text-halo-espresso leading-tight">
+              Where Clinical Efficacy Meets Deep Restorative Calm
+            </h1>
+            <p class="text-base text-halo-cocoa leading-relaxed">
+              Located at <strong class="text-halo-espresso">54a King Street in Southwell</strong>, Halo Skin was created as an intimate, one-to-one sanctuary away from rushed high-street salons. We believe lasting skin transformation happens when evidence-based clinical actives are paired with nervous-system relaxation.
+            </p>
+            <p class="text-base text-halo-cocoa leading-relaxed">
+              Whether you are visiting for medical-grade <strong class="text-halo-espresso">SkinPen Precision Microneedling</strong>, a targeted <strong class="text-halo-espresso">Clinicare Chemical Peel</strong>, or our signature 90-minute <strong class="text-halo-espresso">Sculpt &amp; Glow Ritual</strong>, every step is tailored to your skin barrier on the day.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-5 rounded-2xl bg-white border border-halo-sand">
+                <p class="font-editorial text-xl font-bold text-halo-espresso">Bespoke Diagnostics</p>
+                <p class="text-xs text-halo-cocoa mt-1 leading-relaxed">Zero cookie-cutter routines—every formula and modality is chosen for your current skin barrier.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-white border border-halo-sand">
+                <p class="font-editorial text-xl font-bold text-halo-espresso">Proven Modalities</p>
+                <p class="text-xs text-halo-cocoa mt-1 leading-relaxed">Featuring SkinPen Precision, Clinicare cosmeceuticals, and Dermalux LED phototherapy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clinic Standards & Modalities Banner -->
+        <div class="bg-white rounded-[2.25rem] border border-halo-sand p-8 sm:p-12 mb-20 shadow-sm">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Clinical Partners &amp; Craft</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-halo-espresso">
+              Trusted Technologies Used in Clinic
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 rounded-2xl bg-halo-alabaster border border-halo-sand/80">
+              <span class="text-xs font-bold text-halo-terracotta uppercase tracking-wider">01 &bull; Microneedling</span>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mt-2">SkinPen Precision</h3>
+              <p class="text-xs text-halo-cocoa mt-2 leading-relaxed">FDA-cleared medical microneedling device stimulating natural collagen and elastin safely.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-halo-alabaster border border-halo-sand/80">
+              <span class="text-xs font-bold text-halo-terracotta uppercase tracking-wider">02 &bull; Cosmeceuticals</span>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mt-2">Clinicare Skincare</h3>
+              <p class="text-xs text-halo-cocoa mt-2 leading-relaxed">High-concentration low-molecular hyaluronic acid formulations and targeted clinical peels.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-halo-alabaster border border-halo-sand/80">
+              <span class="text-xs font-bold text-halo-terracotta uppercase tracking-wider">03 &bull; Phototherapy</span>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mt-2">Dermalux LED</h3>
+              <p class="text-xs text-halo-cocoa mt-2 leading-relaxed">Multi-award-winning LED light therapy to energise skin cells, calm inflammation, and accelerate repair.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-halo-alabaster border border-halo-sand/80">
+              <span class="text-xs font-bold text-halo-terracotta uppercase tracking-wider">04 &bull; Manual Artistry</span>
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mt-2">Sculptural Massage</h3>
+              <p class="text-xs text-halo-cocoa mt-2 leading-relaxed">Lifting myofascial release and lymphatic drainage techniques to contour cheekbones and release jaw tension.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive FAQ Accordion -->
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-10">
+            <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Good to Know</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-halo-espresso">
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          <div class="space-y-4" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="faq-item bg-white rounded-2xl border border-halo-sand overflow-hidden">
+              <button type="button" onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-halo-espresso hover:text-halo-terracotta transition">
+                <span>Which treatment should I book for my first visit?</span>
+                <svg class="faq-chevron w-5 h-5 text-halo-terracotta shrink-0 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </button>
+              <div class="faq-content px-6">
+                <p class="pb-5 text-sm text-halo-cocoa leading-relaxed">
+                  We recommend booking <strong>The Halo Customised Facial (60 mins — £75)</strong> or <strong>The Sculpt &amp; Glow Ritual (90 mins — £100)</strong>. Both include a full skin consultation so we can tailor every product and technique to your exact skin goals.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item bg-white rounded-2xl border border-halo-sand overflow-hidden">
+              <button type="button" onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-halo-espresso hover:text-halo-terracotta transition">
+                <span>Where is Halo Skin located and is there parking nearby?</span>
+                <svg class="faq-chevron w-5 h-5 text-halo-terracotta shrink-0 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </button>
+              <div class="faq-content px-6">
+                <p class="pb-5 text-sm text-halo-cocoa leading-relaxed">
+                  You will find us at <strong>54a King Street, Southwell, Nottinghamshire, NG25 0EN</strong>. Convenient short- and long-stay town centre parking is available just a two-minute walk away on King Street and Church Street Car Park.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item bg-white rounded-2xl border border-halo-sand overflow-hidden">
+              <button type="button" onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-halo-espresso hover:text-halo-terracotta transition">
+                <span>Do you offer late-evening appointments?</span>
+                <svg class="faq-chevron w-5 h-5 text-halo-terracotta shrink-0 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </button>
+              <div class="faq-content px-6">
+                <p class="pb-5 text-sm text-halo-cocoa leading-relaxed">
+                  Yes—every <strong>Thursday</strong> the clinic stays open late from <strong>11:00 AM until 7:30 PM</strong>, making it easy to unwind after work. We are also open Monday to Wednesday and Friday from 10:00 AM to 3:00 PM.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item bg-white rounded-2xl border border-halo-sand overflow-hidden">
+              <button type="button" onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-halo-espresso hover:text-halo-terracotta transition">
+                <span>Is there any downtime after SkinPen Microneedling?</span>
+                <svg class="faq-chevron w-5 h-5 text-halo-terracotta shrink-0 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </button>
+              <div class="faq-content px-6">
+                <p class="pb-5 text-sm text-halo-cocoa leading-relaxed">
+                  Expect mild warmth and rosy flush similar to light sun exposure for 24 to 48 hours. Your 90-minute SkinPen appointment (£180) includes topical numbing for comfort, a soothing biocellulose mask, and a dedicated post-care kit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 4: BOOK & CONTACT                                                -->
+  <!-- ===================================================================== -->
+  <main id="page-contact" class="page-view">
+    <section class="pt-12 pb-20 sm:pt-16 sm:pb-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Visit Us in Southwell</span>
+          <h1 class="font-editorial text-4xl sm:text-6xl font-semibold text-halo-espresso leading-tight">
+            Book Your Appointment &amp; Clinic Details
+          </h1>
+          <p class="text-base text-halo-cocoa mt-3">
+            Reserve your treatment online below, call the clinic directly, or message us on Instagram.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Left Column: Location, Hours & Direct Actions -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Address & Map Card -->
+            <div class="bg-white p-7 rounded-3xl border border-halo-sand shadow-sm space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-2xl bg-halo-terracotta/12 text-halo-terracotta flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="font-editorial text-2xl font-bold text-halo-espresso">Clinic Address</h2>
+                  <p class="text-sm text-halo-cocoa mt-1 leading-relaxed">
+                    Halo Skin<br>
+                    54a King Street<br>
+                    Southwell, Nottinghamshire<br>
+                    NG25 0EN
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=54a+King+Street+Southwell+NG25+0EN" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-halo-espresso text-white text-xs font-semibold hover:bg-halo-terracotta transition"
+                >
+                  <span>Open in Google Maps</span>
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+                  </svg>
+                </a>
+                <button type="button" onclick="copyClinicAddress()" id="copyAddressBtn" class="px-5 py-3 rounded-full border border-halo-sand bg-halo-alabaster text-halo-espresso text-xs font-semibold hover:border-halo-terracotta transition">
+                  Copy Postcode
+                </button>
+              </div>
+            </div>
+
+            <!-- Opening Hours Card -->
+            <div class="bg-white p-7 rounded-3xl border border-halo-sand shadow-sm">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-2xl bg-halo-amber/20 text-halo-espresso flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h2 class="font-editorial text-2xl font-bold text-halo-espresso">Opening Hours</h2>
+              </div>
+
+              <ul class="space-y-3 text-sm">
+                <li class="flex justify-between py-2 border-b border-halo-sand/60">
+                  <span class="font-medium text-halo-espresso">Monday – Wednesday</span>
+                  <span class="font-semibold text-halo-cocoa">10:00 AM – 3:00 PM</span>
+                </li>
+                <li class="flex justify-between py-2 border-b border-halo-sand/60 bg-halo-terracotta/8 px-3 rounded-xl">
+                  <span class="font-bold text-halo-terracotta">Thursday (Late Night)</span>
+                  <span class="font-bold text-halo-espresso">11:00 AM – 7:30 PM</span>
+                </li>
+                <li class="flex justify-between py-2 border-b border-halo-sand/60">
+                  <span class="font-medium text-halo-espresso">Friday</span>
+                  <span class="font-semibold text-halo-cocoa">10:00 AM – 3:00 PM</span>
+                </li>
+                <li class="flex justify-between py-2 text-halo-cocoa/80">
+                  <span>Saturday &amp; Sunday</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Direct Phone & Instagram Card -->
+            <div class="bg-gradient-to-br from-halo-cream to-white p-7 rounded-3xl border border-halo-sand shadow-sm space-y-4">
+              <h2 class="font-editorial text-2xl font-bold text-halo-espresso">Direct Contact</h2>
+              <p class="text-xs text-halo-cocoa leading-relaxed">
+                Prefer to speak directly or message us on Instagram? Tap below to connect with the clinic.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <a href="tel:07704330156" class="flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-halo-terracotta text-white text-sm font-semibold shadow-sm hover:brightness-110 transition">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>07704 330156</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-white border border-halo-sand text-halo-espresso text-sm font-semibold hover:border-halo-terracotta transition">
+                  <svg class="w-4 h-4 text-halo-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Appointment Request Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white p-7 sm:p-10 rounded-[2.25rem] border border-halo-sand shadow-soft">
+              <span class="text-xs uppercase tracking-[0.22em] font-bold text-halo-terracotta block mb-2">Online Booking Request</span>
+              <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-halo-espresso mb-2">
+                Request Your Clinic Slot
+              </h2>
+              <p class="text-sm text-halo-cocoa mb-8">
+                Complete your preferred treatment and day below. We will confirm your exact appointment time promptly by text or phone.
+              </p>
+
+              <form id="contactPageBookingForm" onsubmit="handleFormSubmit(event, 'contactPage')" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="cpName" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Full Name *</label>
+                    <input type="text" id="cpName" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3.5 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta" />
+                  </div>
+                  <div>
+                    <label for="cpPhone" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Mobile Number *</label>
+                    <input type="tel" id="cpPhone" required placeholder="e.g. 07700 900123" class="w-full px-4 py-3.5 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="cpTreatment" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Select Treatment *</label>
+                  <select id="cpTreatment" required class="w-full px-4 py-3.5 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+                    <option value="The Halo Customised Facial — £75">The Halo Customised Facial (60 mins — £75)</option>
+                    <option value="Halo Dermaplane Facial — £75">Halo Dermaplane Facial (60 mins — £75)</option>
+                    <option value="Clinicare Chemical Peel — £80">Clinicare Chemical Peel (60 mins — £80)</option>
+                    <option value="The Sculpt & Glow Ritual — £100">The Sculpt &amp; Glow Ritual (90 mins — £100)</option>
+                    <option value="The Halo Face & Back Ritual — £105">The Halo Face &amp; Back Ritual (90 mins — £105)</option>
+                    <option value="Clinicare Microneedling — £125">Clinicare Microneedling (60 mins — £125)</option>
+                    <option value="Bio Cell Trinity — £135">Bio Cell Trinity (60 mins — £135)</option>
+                    <option value="SkinPen Precision Microneedling — £180">SkinPen Precision Microneedling (90 mins — £180)</option>
+                    <option value="Dermalux LED Phototherapy Course — £200">Dermalux LED Phototherapy Course (5 Sessions — £200)</option>
+                  </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="cpDay" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Preferred Day *</label>
+                    <select id="cpDay" required class="w-full px-4 py-3.5 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+                      <option value="Monday (10:00 AM – 3:00 PM)">Monday (10:00 AM – 3:00 PM)</option>
+                      <option value="Tuesday (10:00 AM – 3:00 PM)">Tuesday (10:00 AM – 3:00 PM)</option>
+                      <option value="Wednesday (10:00 AM – 3:00 PM)">Wednesday (10:00 AM – 3:00 PM)</option>
+                      <option value="Thursday Late Night (11:00 AM – 7:30 PM)">Thursday Late Night (11:00 AM – 7:30 PM)</option>
+                      <option value="Friday (10:00 AM – 3:00 PM)">Friday (10:00 AM – 3:00 PM)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="cpTime" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Preferred Time Window</label>
+                    <select id="cpTime" class="w-full px-4 py-3.5 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+                      <option value="Morning (10:00 AM – 12:30 PM)">Morning (10:00 AM – 12:30 PM)</option>
+                      <option value="Early Afternoon (12:30 PM – 3:00 PM)">Early Afternoon (12:30 PM – 3:00 PM)</option>
+                      <option value="Thursday Late Evening (4:30 PM – 7:30 PM)">Thursday Late Evening (4:30 PM – 7:30 PM)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="cpNotes" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-2">Skin Goals or Notes (Optional)</label>
+                  <textarea id="cpNotes" rows="3" placeholder="Tell us about your skin concerns, allergies, or preferred dates..." class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 px-8 rounded-full bg-gradient-to-r from-halo-terracotta to-halo-terracottaDark text-white font-semibold text-base shadow-glow hover:brightness-110 transition cursor-pointer">
+                  Send Appointment Request
+                </button>
+              </form>
+
+              <!-- Confirmation Box (Hidden until submitted) -->
+              <div id="contactPageConfirmation" class="hidden mt-6 p-6 rounded-3xl bg-halo-alabaster border-2 border-halo-sage text-halo-espresso space-y-3">
+                <div class="flex items-center gap-2.5 text-halo-sage font-bold text-sm uppercase tracking-wider">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Request Received by Halo Skin</span>
+                </div>
+                <p id="contactPageConfirmationText" class="text-sm text-halo-cocoa leading-relaxed"></p>
+                <div class="pt-2 flex flex-wrap gap-3">
+                  <a href="tel:07704330156" class="px-5 py-2.5 rounded-full bg-halo-espresso text-white text-xs font-semibold hover:bg-halo-terracotta transition">
+                    Need Urgent Slot? Call 07704 330156
+                  </a>
+                  <button type="button" onclick="resetForm('contactPage')" class="px-5 py-2.5 rounded-full border border-halo-sand bg-white text-xs font-semibold text-halo-espresso">
+                    Make Another Request
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE BOOKING MODAL / DRAWER                                    -->
+  <!-- ===================================================================== -->
+  <div id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6">
+    <!-- Backdrop -->
+    <div onclick="closeBookingModal()" class="fixed inset-0 bg-halo-espresso/65 backdrop-blur-sm transition-opacity"></div>
+
+    <!-- Modal Panel -->
+    <div class="relative z-10 w-full max-w-lg bg-white rounded-[2.25rem] border border-halo-sand shadow-2xl overflow-hidden max-h-[92vh] flex flex-col">
+      <!-- Top Bar -->
+      <div class="px-6 sm:px-8 pt-6 pb-4 bg-halo-alabaster border-b border-halo-sand flex items-center justify-between">
+        <div>
+          <span class="text-[11px] uppercase tracking-[0.2em] font-bold text-halo-terracotta block">54a King St, Southwell</span>
+          <h3 id="modalTitle" class="font-editorial text-2xl sm:text-3xl font-bold text-halo-espresso">Reserve Your Treatment</h3>
+        </div>
+        <button type="button" onclick="closeBookingModal()" aria-label="Close booking modal" class="w-10 h-10 rounded-full bg-white border border-halo-sand flex items-center justify-center text-halo-espresso hover:border-halo-terracotta hover:text-halo-terracotta transition">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Scrollable Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto">
+        <form id="modalBookingForm" onsubmit="handleFormSubmit(event, 'modal')" class="space-y-4">
+          <div>
+            <label for="modalTreatmentSelect" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-1.5">Selected Treatment *</label>
+            <select id="modalTreatmentSelect" required class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm font-medium text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+              <option value="The Halo Customised Facial — £75">The Halo Customised Facial (60 mins — £75)</option>
+              <option value="Halo Dermaplane Facial — £75">Halo Dermaplane Facial (60 mins — £75)</option>
+              <option value="Clinicare Chemical Peel — £80">Clinicare Chemical Peel (60 mins — £80)</option>
+              <option value="The Sculpt & Glow Ritual — £100">The Sculpt &amp; Glow Ritual (90 mins — £100)</option>
+              <option value="The Halo Face & Back Ritual — £105">The Halo Face &amp; Back Ritual (90 mins — £105)</option>
+              <option value="Clinicare Microneedling — £125">Clinicare Microneedling (60 mins — £125)</option>
+              <option value="Bio Cell Trinity — £135">Bio Cell Trinity (60 mins — £135)</option>
+              <option value="SkinPen Precision Microneedling — £180">SkinPen Precision Microneedling (90 mins — £180)</option>
+              <option value="Dermalux LED Phototherapy Course — £200">Dermalux LED Phototherapy Course (5 Sessions — £200)</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="modalDay" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-1.5">Preferred Day *</label>
+              <select id="modalDay" required class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+                <option value="Monday (10am–3pm)">Monday (10am–3pm)</option>
+                <option value="Tuesday (10am–3pm)">Tuesday (10am–3pm)</option>
+                <option value="Wednesday (10am–3pm)">Wednesday (10am–3pm)</option>
+                <option value="Thursday Late Night (11am–7:30pm)">Thursday (11am–7:30pm)</option>
+                <option value="Friday (10am–3pm)">Friday (10am–3pm)</option>
+              </select>
+            </div>
+            <div>
+              <label for="modalTime" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-1.5">Preferred Time</label>
+              <select id="modalTime" class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta">
+                <option value="Morning">Morning</option>
+                <option value="Early Afternoon">Early Afternoon</option>
+                <option value="Thursday Evening">Thursday Evening</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="modalName" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-1.5">Your Name *</label>
+              <input type="text" id="modalName" required placeholder="Full name" class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta" />
+            </div>
+            <div>
+              <label for="modalPhone" class="block text-xs font-bold uppercase tracking-wider text-halo-espresso mb-1.5">Phone Number *</label>
+              <input type="tel" id="modalPhone" required placeholder="07700 900000" class="w-full px-4 py-3 rounded-2xl bg-halo-alabaster border border-halo-sand text-sm text-halo-espresso focus:outline-none focus:border-halo-terracotta" />
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-4 px-6 rounded-full bg-gradient-to-r from-halo-terracotta to-halo-terracottaDark text-white font-semibold text-sm shadow-glow hover:brightness-110 transition cursor-pointer">
+            Confirm Booking Request
+          </button>
+
+          <div class="pt-3 border-t border-halo-sand flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-halo-cocoa">
+            <span>Prefer to book by phone?</span>
+            <a href="tel:07704330156" class="font-bold text-halo-terracotta hover:underline">Tap to Call 07704 330156</a>
+          </div>
+        </form>
+
+        <!-- Modal Confirmation State -->
+        <div id="modalConfirmation" class="hidden space-y-4 text-center py-4">
+          <div class="w-14 h-14 rounded-full bg-halo-sage/15 text-halo-sage mx-auto flex items-center justify-center">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h4 class="font-editorial text-3xl font-bold text-halo-espresso">Booking Request Sent</h4>
+          <p id="modalConfirmationText" class="text-sm text-halo-cocoa leading-relaxed"></p>
+          <div class="pt-3 flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="tel:07704330156" class="px-6 py-3 rounded-full bg-halo-espresso text-white text-xs font-semibold hover:bg-halo-terracotta transition">
+              Call Clinic: 07704 330156
+            </a>
+            <button type="button" onclick="closeBookingModal()" class="px-6 py-3 rounded-full border border-halo-sand bg-halo-alabaster text-xs font-semibold text-halo-espresso">
+              Done
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER                                                                -->
+  <!-- ===================================================================== -->
+  <footer class="bg-halo-espresso text-halo-alabaster pt-16 pb-12 border-t border-halo-cocoa/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-halo-terracotta to-halo-amber flex items-center justify-center text-white">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"></path>
+              </svg>
+            </div>
+            <span class="font-editorial text-2xl font-semibold text-white">Halo Skin</span>
+          </div>
+          <p class="text-sm text-halo-sand leading-relaxed">
+            Southwell's 5.0-star bespoke skin and facial clinic. Clinical results paired with deeply restorative sculptural care.
+          </p>
+        </div>
+
+        <!-- Quick Pages -->
+        <div>
+          <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-halo-amber mb-4">Navigation</h3>
+          <ul class="space-y-2.5 text-sm text-halo-sand">
+            <li><button type="button" onclick="navigateTo('home')" class="hover:text-white transition">Home</button></li>
+            <li><button type="button" onclick="navigateTo('treatments')" class="hover:text-white transition">Treatments &amp; Pricing</button></li>
+            <li><button type="button" onclick="navigateTo('about')" class="hover:text-white transition">About &amp; Clinic</button></li>
+            <li><button type="button" onclick="navigateTo('contact')" class="hover:text-white transition">Book &amp; Contact</button></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-halo-amber mb-4">Clinic Hours</h3>
+          <ul class="space-y-2 text-sm text-halo-sand">
+            <li>Mon – Wed: 10:00 AM – 3:00 PM</li>
+            <li class="text-white font-semibold">Thursday: 11:00 AM – 7:30 PM</li>
+            <li>Friday: 10:00 AM – 3:00 PM</li>
+            <li class="text-halo-sand/60">Sat – Sun: Closed</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-halo-amber mb-4">Find Us</h3>
+          <p class="text-sm text-halo-sand leading-relaxed mb-3">
+            54a King Street, Southwell,<br>Nottinghamshire, NG25 0EN
+          </p>
+          <div class="flex flex-col space-y-2 text-sm">
+            <a href="tel:07704330156" class="text-white font-semibold hover:text-halo-amber transition">Tel: 07704 330156</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=54a+King+Street+Southwell+NG25+0EN" target="_blank" rel="noopener noreferrer" class="text-halo-terracotta hover:underline">Get Google Maps Directions</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-halo-sand/70">
+        <p>&copy; 2026 Halo Skin Southwell. All rights reserved.</p>
+        <p>54a King Street, Southwell, NG25 0EN</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT APPLICATION LOGIC                                          -->
+  <!-- ===================================================================== -->
+  <script>
+    // Complete Accurate Treatment Catalogue for Halo Skin
+    const TREATMENTS_DATA = [
+      {
+        id: 'customised-facial',
+        name: 'The Halo Customised Facial',
+        category: 'signature',
+        categoryLabel: 'Signature Facial',
+        duration: '60 mins',
+        price: 75,
+        badge: 'Most Popular',
+        description: 'Tailored deep cleanse, bespoke enzymatic exfoliation, targeted active mask, and sculptural facial massage designed around your skin barrier on the day.'
+      },
+      {
+        id: 'dermaplane-facial',
+        name: 'Halo Dermaplane Facial',
+        category: 'signature',
+        categoryLabel: 'Signature Facial',
+        duration: '60 mins',
+        price: 75,
+        badge: 'Glass Skin Glow',
+        description: 'Gentle surgical-grade exfoliation removing dull surface skin cells and fine vellus hair for instant luminosity, smoother makeup application, and deeper serum absorption.'
+      },
+      {
+        id: 'clinicare-peel',
+        name: 'Clinicare Chemical Peel',
+        category: 'clinical',
+        categoryLabel: 'Advanced Clinical',
+        duration: '60 mins',
+        price: 80,
+        badge: 'Targeted Resurfacing',
+        description: 'Superficial clinical-grade resurfacing peel (Glow, Pure, or Refresh) tailored to brighten uneven pigmentation, clear congestion, or refine fine lines with minimal downtime.'
+      },
+      {
+        id: 'sculpt-glow-ritual',
+        name: 'The Sculpt & Glow Ritual',
+        category: 'rituals',
+        categoryLabel: 'Rituals & Body',
+        duration: '90 mins',
+        price: 100,
+        badge: 'Client Favourite',
+        description: 'Lifting buccal and lymphatic drainage massage paired with hydrating botanical actives to release facial tension, reduce puffiness, and visibly contour.'
+      },
+      {
+        id: 'face-back-ritual',
+        name: 'The Halo Face & Back Ritual',
+        category: 'rituals',
+        categoryLabel: 'Rituals & Body',
+        duration: '90 mins',
+        price: 105,
+        badge: 'Head-to-Toe',
+        description: 'Full-body tension release starting with a purifying back cleanse, exfoliation, and deeply relaxing massage, followed by our signature customised facial.'
+      },
+      {
+        id: 'clinicare-microneedling',
+        name: 'Clinicare Microneedling',
+        category: 'clinical',
+        categoryLabel: 'Advanced Clinical',
+        duration: '60 mins',
+        price: 125,
+        badge: 'Collagen Boost',
+        description: 'Targeted collagen-induction therapy infused with sterile low-molecular hyaluronic acid serums to smooth fine lines, acne scarring, and uneven skin texture.'
+      },
+      {
+        id: 'bio-cell-trinity',
+        name: 'Bio Cell Trinity',
+        category: 'clinical',
+        categoryLabel: 'Advanced Clinical',
+        duration: '60 mins',
+        price: 135,
+        badge: 'Cellular Renewal',
+        description: 'Multi-layered cellular renewal combining gentle resurfacing, concentrated peptide infusion, and restorative LED phototherapy for total skin revitalisation.'
+      },
+      {
+        id: 'skinpen-microneedling',
+        name: 'SkinPen Precision Microneedling',
+        category: 'clinical',
+        categoryLabel: 'Advanced Clinical',
+        duration: '90 mins',
+        price: 180,
+        badge: 'Gold Standard',
+        description: 'Medical-grade FDA-cleared microneedling device with topical numbing, soothing biocellulose cooling mask, and dedicated post-procedure recovery kit.'
+      },
+      {
+        id: 'dermalux-led-course',
+        name: 'Dermalux LED Phototherapy Course',
+        category: 'clinical',
+        categoryLabel: 'Advanced Clinical',
+        duration: '5 Sessions',
+        price: 200,
+        badge: 'Course of 5',
+        description: 'Clinically proven multi-wavelength LED light therapy course engineered to accelerate skin healing, calm redness and rosacea, and boost natural collagen.'
+      }
+    ];
+
+    let activeCategory = 'all';
+    let currentSearchTerm = '';
+
+    // 1. Multi-Page Navigation Controller
+    function navigateTo(pageId) {
+      // Hide all views
+      document.querySelectorAll('.page-view').forEach(view => {
+        view.classList.remove('active');
+      });
+
+      // Show selected view
+      const targetView = document.getElementById(`page-${pageId}`);
+      if (targetView) {
+        targetView.classList.add('active');
+      }
+
+      // Update Desktop Nav Pills
+      document.querySelectorAll('.nav-pill').forEach(btn => {
+        if (btn.dataset.nav === pageId) {
+          btn.classList.add('bg-halo-espresso', 'text-white', 'shadow-sm');
+          btn.classList.remove('text-halo-espresso', 'hover:bg-white/70');
+        } else {
+          btn.classList.remove('bg-halo-espresso', 'text-white', 'shadow-sm');
+          btn.classList.add('text-halo-espresso', 'hover:bg-white/70');
+        }
+      });
+
+      // Update Mobile Nav Items
+      document.querySelectorAll('.mobile-nav-item').forEach(btn => {
+        if (btn.dataset.navMobile === pageId) {
+          btn.classList.add('bg-halo-cream');
+          btn.classList.remove('hover:bg-halo-alabaster');
+        } else {
+          btn.classList.remove('bg-halo-cream');
+          btn.classList.add('hover:bg-halo-alabaster');
+        }
+      });
+
+      // Scroll smoothly to top of page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 2. Mobile Menu Drawer Toggle
+    function toggleMobileMenu(forceState) {
+      const drawer = document.getElementById('mobileMenuDrawer');
+      const iconOpen = document.getElementById('menuIconOpen');
+      const iconClose = document.getElementById('menuIconClose');
+      const isHidden = drawer.classList.contains('hidden');
+      const shouldOpen = typeof forceState === 'boolean' ? forceState : isHidden;
+
+      if (shouldOpen) {
+        drawer.classList.remove('hidden');
+        iconOpen.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+    }
+
+    // 3. Render & Filter Treatments on Page 2
+    function renderTreatments() {
+      const grid = document.getElementById('treatmentsGrid');
+      const emptyState = document.getElementById('noTreatmentsFound');
+      if (!grid) return;
+
+      const filtered = TREATMENTS_DATA.filter(item => {
+        const matchesCat = activeCategory === 'all' || item.category === activeCategory;
+        const q = currentSearchTerm.trim().toLowerCase();
+        const matchesQuery = !q || 
+          item.name.toLowerCase().includes(q) || 
+          item.description.toLowerCase().includes(q) || 
+          item.categoryLabel.toLowerCase().includes(q);
+        return matchesCat && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(item => {
+        const bookingOptionValue = `${item.name} — £${item.price}`;
+        return `
+          <article class="rounded-3xl bg-white border border-halo-sand p-7 flex flex-col justify-between shadow-sm hover:shadow-soft hover:border-halo-terracotta/50 transition-all">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-halo-alabaster border border-halo-sand text-halo-terracotta">
+                  ${item.categoryLabel}
+                </span>
+                <span class="font-editorial text-3xl font-bold text-halo-espresso">£${item.price}</span>
+              </div>
+
+              <div class="flex items-center gap-2 text-xs font-semibold text-halo-cocoa mb-2">
+                <span>${item.duration}</span>
+                <span>&bull;</span>
+                <span class="text-halo-amber font-bold">${item.badge}</span>
+              </div>
+
+              <h3 class="font-editorial text-2xl font-bold text-halo-espresso mb-3 leading-snug">
+                ${item.name}
+              </h3>
+
+              <p class="text-sm text-halo-cocoa leading-relaxed">
+                ${item.description}
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-halo-sand flex items-center gap-3">
+              <button 
+                type="button" 
+                onclick="openBookingModal('${bookingOptionValue.replace(/'/g, "\\'")}')" 
+                class="w-full py-3.5 px-5 rounded-full bg-halo-espresso text-white text-sm font-semibold hover:bg-halo-terracotta transition cursor-pointer"
+              >
+                Book This Treatment
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function filterTreatments(category) {
+      activeCategory = category;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.classList.add('bg-halo-espresso', 'text-white');
+          btn.classList.remove('bg-halo-alabaster', 'text-halo-espresso', 'hover:bg-halo-cream');
+        } else {
+          btn.classList.remove('bg-halo-espresso', 'text-white');
+          btn.classList.add('bg-halo-alabaster', 'text-halo-espresso', 'hover:bg-halo-cream');
+        }
+      });
+      renderTreatments();
+    }
+
+    function searchTreatments(query) {
+      currentSearchTerm = query;
+      renderTreatments();
+    }
+
+    function resetTreatmentFilters() {
+      currentSearchTerm = '';
+      const searchInput = document.getElementById('treatmentSearchInput');
+      if (searchInput) searchInput.value = '';
+      filterTreatments('all');
+    }
+
+    // 4. Interactive Booking Modal Controls
+    function openBookingModal(preselectedTreatment) {
+      const modal = document.getElementById('bookingModal');
+      const form = document.getElementById('modalBookingForm');
+      const confirmBox = document.getElementById('modalConfirmation');
+      const selectEl = document.getElementById('modalTreatmentSelect');
+
+      // Reset modal state to form
+      form.classList.remove('hidden');
+      confirmBox.classList.add('hidden');
+
+      if (preselectedTreatment && selectEl) {
+        for (let i = 0; i < selectEl.options.length; i++) {
+          if (selectEl.options[i].value === preselectedTreatment) {
+            selectEl.selectedIndex = i;
+            break;
+          }
+        }
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeBookingModal();
+      }
+    });
+
+    // 5. Handle Form Submissions (Both Modal & Contact Page)
+    function handleFormSubmit(event, source) {
+      event.preventDefault();
+
+      if (source === 'modal') {
+        const name = document.getElementById('modalName').value.trim();
+        const phone = document.getElementById('modalPhone').value.trim();
+        const treatment = document.getElementById('modalTreatmentSelect').value;
+        const day = document.getElementById('modalDay').value;
+        const time = document.getElementById('modalTime').value;
+
+        document.getElementById('modalBookingForm').classList.add('hidden');
+        const confirmBox = document.getElementById('modalConfirmation');
+        const confirmText = document.getElementById('modalConfirmationText');
+
+        confirmText.innerHTML = `Thank you, <strong class="text-halo-espresso">${name}</strong>. We have logged your request for <strong class="text-halo-espresso">${treatment}</strong> on <strong class="text-halo-espresso">${day} (${time})</strong>. We will message <strong class="text-halo-espresso">${phone}</strong> shortly to confirm your exact time at 54a King Street.`;
+        confirmBox.classList.remove('hidden');
+      } else {
+        const name = document.getElementById('cpName').value.trim();
+        const phone = document.getElementById('cpPhone').value.trim();
+        const treatment = document.getElementById('cpTreatment').value;
+        const day = document.getElementById('cpDay').value;
+        const time = document.getElementById('cpTime').value;
+
+        document.getElementById('contactPageBookingForm').classList.add('hidden');
+        const confirmBox = document.getElementById('contactPageConfirmation');
+        const confirmText = document.getElementById('contactPageConfirmationText');
+
+        confirmText.innerHTML = `Thank you, <strong class="text-halo-espresso">${name}</strong>. Your request for <strong class="text-halo-espresso">${treatment}</strong> on <strong class="text-halo-espresso">${day} — ${time}</strong> has been received. We will contact <strong class="text-halo-espresso">${phone}</strong> shortly to confirm your slot.`;
+        confirmBox.classList.remove('hidden');
+      }
+    }
+
+    function resetForm(source) {
+      if (source === 'contactPage') {
+        document.getElementById('contactPageBookingForm').reset();
+        document.getElementById('contactPageBookingForm').classList.remove('hidden');
+        document.getElementById('contactPageConfirmation').classList.add('hidden');
+      }
+    }
+
+    // 6. FAQ Accordion Toggle
+    function toggleFaq(buttonEl) {
+      const item = buttonEl.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+
+    // 7. Copy Postcode Helper (Iframe-safe execCommand fallback)
+    function copyClinicAddress() {
+      const btn = document.getElementById('copyAddressBtn');
+      const tempInput = document.createElement('input');
+      tempInput.value = '54a King Street, Southwell, NG25 0EN';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+        if (btn) {
+          btn.textContent = 'Copied NG25 0EN';
+          setTimeout(() => {
+            btn.textContent = 'Copy Postcode';
+          }, 2500);
+        }
+      } catch (err) {
+        if (btn) btn.textContent = 'NG25 0EN';
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // Initialize treatments on load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderTreatments();
+    });
+  </script>
+</body>
+</html>
